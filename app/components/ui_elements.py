@@ -80,10 +80,9 @@ def copy_button_custom(text_to_copy: str, label: str, dom_id: str) -> None:
           if (success) {{
             msg.textContent = "✅ Copiat!";
             msg.style.color = "#27AE60";
-            msg.style.fontStyle = "italic";  
-            msg.style.border = "1px solid #c3e6cb"; 
-            msg.style.opacity = "0.8";  
-            setTimeout(() => {{ msg.textContent = ""; }}, 300000000000);
+            msg.style.textShadow = "0px 0px 8px rgba(39, 174, 96, 0.4)"; // Efect de strălucire
+            msg.style.fontWeight = "800"; // Mai îngroșat
+            msg.style.transform = "scale(1.05)"; // Îl face cu 5% mai mare când apare
           }} else {{
             msg.textContent = "❌ Deschide caseta de mai jos și copiază manual.";
             msg.style.color = "#E74C3C";
