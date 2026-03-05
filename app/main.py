@@ -1,14 +1,14 @@
 import streamlit as st
 import time
 
-from app.core.processor import (
+from core.processor import (
     clean_transcript,
     split_text_into_chunks,
     build_prompt,
     generate_digest
 )
-from app.core.prompts import DEFAULT_SYSTEM_PROMPT
-from app.components.ui_elements import copy_button_custom
+from core.prompts import DEFAULT_SYSTEM_PROMPT
+from components.ui_elements import copy_button_custom
 
 # Configurare Pagină
 st.set_page_config(page_title="MedSplit | Script to Course", page_icon="⚕️", layout="wide")
