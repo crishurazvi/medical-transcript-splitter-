@@ -80,7 +80,10 @@ def copy_button_custom(text_to_copy: str, label: str, dom_id: str) -> None:
           if (success) {{
             msg.textContent = "✅ Copiat!";
             msg.style.color = "#27AE60";
-            setTimeout(() => {{ msg.textContent = ""; }}, 3000);
+            msg.style.fontStyle = "italic";  
+            msg.style.border = "1px solid #c3e6cb"; 
+            msg.style.opacity = "0.8";  
+            setTimeout(() => {{ msg.textContent = ""; }}, 300000000000);
           }} else {{
             msg.textContent = "❌ Deschide caseta de mai jos și copiază manual.";
             msg.style.color = "#E74C3C";
